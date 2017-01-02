@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		271FC5661DFA9072007F0181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC5651DFA9072007F0181 /* AppDelegate.swift */; };
-		271FC5681DFA9072007F0181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC5671DFA9072007F0181 /* ViewController.swift */; };
+		271FC5681DFA9072007F0181 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC5671DFA9072007F0181 /* MapViewController.swift */; };
 		271FC56B1DFA9072007F0181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271FC5691DFA9072007F0181 /* Main.storyboard */; };
 		271FC56D1DFA9072007F0181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271FC56C1DFA9072007F0181 /* Assets.xcassets */; };
 		271FC5701DFA9072007F0181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271FC56E1DFA9072007F0181 /* LaunchScreen.storyboard */; };
+		271FC5791DFA918C007F0181 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FC5781DFA918C007F0181 /* MapKit.framework */; };
+		271FC57B1DFA9359007F0181 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC57A1DFA9359007F0181 /* SearchViewController.swift */; };
+		271FC57D1DFA9815007F0181 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC57C1DFA9815007F0181 /* SearchTableViewCell.swift */; };
+		271FC57F1DFA9A4A007F0181 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FC57E1DFA9A4A007F0181 /* Data.swift */; };
+		271FC5811DFAACFF007F0181 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FC5801DFAACFF007F0181 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271FC5621DFA9072007F0181 /* FCUMAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCUMAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271FC5651DFA9072007F0181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		271FC5671DFA9072007F0181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		271FC5671DFA9072007F0181 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		271FC56A1DFA9072007F0181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		271FC56C1DFA9072007F0181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271FC56F1DFA9072007F0181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271FC5711DFA9072007F0181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271FC5781DFA918C007F0181 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		271FC57A1DFA9359007F0181 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		271FC57C1DFA9815007F0181 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		271FC57E1DFA9A4A007F0181 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		271FC5801DFAACFF007F0181 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271FC5811DFAACFF007F0181 /* CoreLocation.framework in Frameworks */,
+				271FC5791DFA918C007F0181 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				271FC5641DFA9072007F0181 /* FCUMAP */,
 				271FC5631DFA9072007F0181 /* Products */,
+				271FC5771DFA918C007F0181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,26 @@
 		271FC5641DFA9072007F0181 /* FCUMAP */ = {
 			isa = PBXGroup;
 			children = (
-				271FC5651DFA9072007F0181 /* AppDelegate.swift */,
-				271FC5671DFA9072007F0181 /* ViewController.swift */,
+				271FC57A1DFA9359007F0181 /* SearchViewController.swift */,
+				271FC5671DFA9072007F0181 /* MapViewController.swift */,
 				271FC5691DFA9072007F0181 /* Main.storyboard */,
+				271FC5651DFA9072007F0181 /* AppDelegate.swift */,
 				271FC56C1DFA9072007F0181 /* Assets.xcassets */,
 				271FC56E1DFA9072007F0181 /* LaunchScreen.storyboard */,
 				271FC5711DFA9072007F0181 /* Info.plist */,
+				271FC57C1DFA9815007F0181 /* SearchTableViewCell.swift */,
+				271FC57E1DFA9A4A007F0181 /* Data.swift */,
 			);
 			path = FCUMAP;
+			sourceTree = "<group>";
+		};
+		271FC5771DFA918C007F0181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271FC5801DFAACFF007F0181 /* CoreLocation.framework */,
+				271FC5781DFA918C007F0181 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +121,13 @@
 				TargetAttributes = {
 					271FC5611DFA9072007F0181 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V3AVXX7QQL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271FC5681DFA9072007F0181 /* ViewController.swift in Sources */,
+				271FC57B1DFA9359007F0181 /* SearchViewController.swift in Sources */,
+				271FC57F1DFA9A4A007F0181 /* Data.swift in Sources */,
+				271FC57D1DFA9815007F0181 /* SearchTableViewCell.swift in Sources */,
+				271FC5681DFA9072007F0181 /* MapViewController.swift in Sources */,
 				271FC5661DFA9072007F0181 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,9 +294,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3AVXX7QQL;
 				INFOPLIST_FILE = FCUMAP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fcu.FCUMAP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcu.ahkui.FCUMAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +308,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3AVXX7QQL;
 				INFOPLIST_FILE = FCUMAP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fcu.FCUMAP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcu.ahkui.FCUMAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +337,7 @@
 				271FC5761DFA9072007F0181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
